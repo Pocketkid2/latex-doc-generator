@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lipsum} % For dummy text
+\usepackage{helvet} % Use Helvetica (Arial) font
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sans-serif
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Header Left}
+\fancyhead[C]{Header Center}
+\fancyhead[R]{Header Right}
+\fancyfoot[L]{Footer Left}
+\fancyfoot[C]{Footer Center}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+% Logo on the first page
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.5\textwidth]{marvell.png}\par\vspace{1cm}
+    {\scshape\LARGE Your Document Title \par}
+    \vfill
+    \begin{center}
+        \large
+        Author Name\\
+        \today
+    \end{center}
+    \vfill
+\end{titlepage}
+
+% Table of Contents on the second page
+\newpage
+\tableofcontents
+\newpage
+
+% Dummy text for content
+\section{Introduction}
+\lipsum[1-4]
+
+\section{Section 1}
+\lipsum[5-8]
+
+\section{Section 2}
+\lipsum[9-12]
+
+\end{document}
